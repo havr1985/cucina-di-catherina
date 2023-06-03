@@ -288,9 +288,26 @@ body {
 
 .hero-second-title{
     line-height: 1.25;
-    padding-bottom: 228px;
+    margin-bottom: 228px;
 }
 
 .hero-second-title .element {
     color: var(--accent-color);
 }
+.hero-box {
+    position: relative;
+}
+
+
+.hero-images-bg {
+    position: absolute;
+    width: 302px;
+    height: 177px;
+    padding: 0;
+    top: 144px;
+    left:0;
+    transform: rotate(-20.76deg);
+}
+
+
+
