@@ -53,16 +53,22 @@
 
     <main>
         <section class="section-hero">
-            <div class="container">
+          <div class="container">
             <h1 class="hero-title">CUCINA DI CATHERINA</h1>
             <p class="hero-second-title">We know, <br> you will <span class="element">love</span> our product</p>
-            <div class="hero-img-box">
+          <div class="hero-img-box">
+            <picture>
+                <source srcset="./images/ketchup-tablet.png 1x, ./images/ketchup-tablet@2x.png 2x"
+                media="(min-width:1020px)">
+                <source srcset="./images/ketchup-mobile.png 1x, ./images/ketchup-mobile@2x.png 2x"
+                media="(max-width:1019px)">
             <img src="./images/ketchup-mobile.png" alt="" class="hero-img">
-            </div>
-            <div class="hero-bg-box">
+            </picture>
+          </div>
+          <div class="hero-bg-box">
             <img src="./images/hero-bg.png" alt="" class="hero-images-bg">
-            </div>
-            <button type="button" class="hero-btn">Buy now</button>
+          </div>
+          <button type="button" class="hero-btn">Buy now</button>
             <div class="hero-text-content">
             <div class="left-box">
             <p class="hero-number">14</p>
@@ -73,32 +79,33 @@
             <p class="hero-text">factories around the world</p>
             </div>
             </div>
+           
             <ul class="hero-social-list list">
                 <li class="hero-social-item">
                     <a href="" class="hero-social-link link">
-                        <svg class="hero-social-icon">
-                            <use></use>
+                        <svg class="hero-social-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-tumblr"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="hero-social-item">
                     <a href="" class="hero-social-link link">
-                        <svg class="hero-social-icon">
-                            <use></use>
+                        <svg class="hero-social-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="hero-social-item">
                     <a href="" class="hero-social-link link">
-                        <svg class="hero-social-icon">
-                            <use></use>
+                        <svg class="hero-social-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-youtube"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="hero-social-item">
                     <a href="" class="hero-social-link link">
-                        <svg class="hero-social-icon">
-                            <use></use>
+                        <svg class="hero-social-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>

@@ -21,6 +21,10 @@ img {
     display: block;
 }
 
+button {
+    cursor: pointer;
+}
+
 .list {
     list-style: none;
 }
@@ -261,8 +265,8 @@ body {
 
 .section-hero{
     position: relative;
-    
     padding: 40px 0;
+    margin-bottom: 100px;
 }
 
 .hero-title {
@@ -288,6 +292,7 @@ body {
 }
 
 .hero-second-title .element {
+    font-weight: 600;
     color: var(--accent-color);
 }
 
@@ -324,12 +329,13 @@ body {
 .hero-text-content {
     margin-top: 16px;
     display: flex;
-    width: 100%;
+    margin-bottom: 24px;
 }
 
 .left-box{
     display: flex;
     width: 50%;
+    flex-shrink: 0;
     align-items: center;
     
 }
@@ -338,7 +344,8 @@ body {
     display: flex;
     width: 50%;
     align-items: center;
-    margin-left: 22px;
+    margin-left: 19px;
+    
     
 }
 .hero-number {
@@ -346,6 +353,7 @@ body {
     font-size: 32px;
     line-height: 1.21;
     margin-right: 12px;
+    
 }
 
 .left-box::after {
@@ -353,8 +361,94 @@ body {
     display: inline-flex;
     height: 78px;
     border: 1px solid var(--primary-text-color);
-    margin-right: 21px;
+    margin-left: 22px;
 }
+
+.hero-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    line-height: 0;
+}
+
+
+
+@media screen and (min-width:1020px) {
+    .hero-bg-box {
+        display: none;
+    }
+
+    .section-hero {
+        padding: 72px 0 31px 0;
+    }
+
+    .hero-title {
+        font-size: 64px;
+        line-height: 1.21;
+        max-width: 388px;
+        margin-bottom: 24px;
+    }
+
+    .hero-title::before {
+        height: 153px;
+        margin-right: 12px;
+    }
+
+    .hero-second-title {
+        line-height: 1.22;
+        font-weight: 300;
+        font-size: 36px;
+        margin-bottom: 48px;
+    }
+
+    .hero-second-title .element {
+        font-weight: 800;
+        color: rgba(188, 26, 26, 0.71);
+    }
+    
+    .hero-btn {
+        width: 302px;
+        padding: 20px 84px;
+        height: 77px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 1.23;
+        margin-bottom: 48px;
+    }
+
+    .hero-text-content {
+        width: 371px;
+        margin-bottom: 74px;
+    }
+
+    .hero-number {
+        margin-right: 10px;
+    }
+
+    .left-box::after {
+        margin-left: 10px;
+    }
+
+    .right-box {
+        margin-left: 14px;
+    }
+
+    .hero-social-list {
+        gap: 40px;
+    }
+
+    .hero-social-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .hero-img-box {
+        top: 72px;
+        right: 47px;
+    }
+}
+
+
 
 
 
