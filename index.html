@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>   
 <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -53,18 +57,11 @@
 
     <main>
         <section class="section-hero">
-          <div class="container">
+          <div class="container hero-container">
+            <div class="hero-left-content">
             <h1 class="hero-title">CUCINA DI CATHERINA</h1>
             <p class="hero-second-title">We know, <br> you will <span class="element">love</span> our product</p>
-          <div class="hero-img-box">
-            <picture>
-                <source srcset="./images/ketchup-tablet.png 1x, ./images/ketchup-tablet@2x.png 2x"
-                media="(min-width:1020px)">
-                <source srcset="./images/ketchup-mobile.png 1x, ./images/ketchup-mobile@2x.png 2x"
-                media="(max-width:1019px)">
-            <img src="./images/ketchup-mobile.png" alt="" class="hero-img">
-            </picture>
-          </div>
+          
           <div class="hero-bg-box">
             <img src="./images/hero-bg.png" alt="" class="hero-images-bg">
           </div>
@@ -79,7 +76,8 @@
             <p class="hero-text">factories around the world</p>
             </div>
             </div>
-           
+            </div>
+           <div class="hero-right-content">
             <ul class="hero-social-list list">
                 <li class="hero-social-item">
                     <a href="" class="hero-social-link link">
@@ -111,6 +109,111 @@
                 </li>
             </ul>
             </div>
+            <div class="hero-img-box">
+            <picture>
+                <source srcset="./images/ketchup-desctop.png 1x, ./images/ketchup-desctop@2x.png 2x"
+                media="(min-width:1280px)">
+                <source srcset="./images/ketchup-tablet.png 1x, ./images/ketchup-tablet@2x.png 2x"
+                media="(min-width:1020px)">
+                <source srcset="./images/ketchup-mobile.png 1x, ./images/ketchup-mobile@2x.png 2x"
+                media="(max-width:1019px)">
+            <img src="./images/ketchup-mobile.png" alt="" class="hero-img">
+            </picture>
+          </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container products-container">
+                <h2 class="products-title visually-hidden">Products</h2>
+                <div class="swiper">
+                 <!-- Additional required wrapper -->
+                 <div class="swiper-wrapper">
+                   <!-- Slides -->
+                   <div class="swiper-slide">
+                    <ul class="products-list">
+                        <li class="products-item">
+                            <picture>
+                                <source srcset="./images/tomato-mobile.jpg 1x, ./images/tomato-mobile@2x.jpg 2x"
+                                media="(max-width:1019px)">
+                                <img src="./images/tomato-mobile.jpg" alt="" class="products-item-img">
+                            </picture>
+                            <div class="products-item-content">
+                                <h3 class="products-content-title">Classic sauce</h3>
+                                <button type="button" class="products-content-btn">Buy now</button>
+                            </div>
+                        </li>
+                        <li class="products-item">
+                            <picture>
+                                <source srcset="./images/pepper-mobile.jpg 1x, ./images/pepper-mobile@2x.jpg 2x"
+                                media="(max-width:1019px)">
+                                <img src="./images/pepper-mobile.jpg" alt="" class="products-item-img">
+                            </picture>
+                            <div class="products-item-content">
+                                <h3 class="products-content-title">Spicy sauce</h3>
+                                <button type="button" class="products-content-btn">Buy now</button>
+                            </div>
+                        </li>
+                    </ul>
+                   </div>
+                   <div class="swiper-slide">
+                    <ul class="products-list">
+                        <li class="products-item">
+                            <picture>
+                                <source srcset="./images/tomato-sauce-mobile.jpg 1x, ./images/tomato-sauce-mobile@2x.jpg 2x"
+                                media="(max-width:1019px)">
+                                <img src="./images/tomato-sauce-mobile.jpg" alt="" class="products-item-img">
+                            </picture>
+                            <div class="products-item-content">
+                                <h3 class="products-content-title">Classic sauce</h3>
+                                <button type="button" class="products-content-btn">Buy now</button>
+                            </div>
+                        </li>
+                        <li class="products-item">
+                            <picture>
+                                <source srcset="./images/pepper-sauce-mobile.jpg 1x, ./images/pepper-sauce-mobile@2x.jpg 2x"
+                                media="(max-width:1019px)">
+                                <img src="./images/pepper-sauce-mobile.jpg" alt="" class="products-item-img">
+                            </picture>
+                            <div class="products-item-content">
+                                <h3 class="products-content-title">Spicy sauce</h3>
+                                <button type="button" class="products-content-btn">Buy now</button>
+                            </div>
+                        </li>
+                    </ul>
+                   </div>
+                   <div class="swiper-slide">
+                    <ul class="products-list">
+                        <li class="products-item">
+                            <picture>
+                                <source srcset="./images/tomato-fresh-mobile.jpg 1x, ./images/tomato-fresh-mobile@2x.jpg 2x"
+                                media="(max-width:1019px)">
+                                <img src="./images/tomato-fresh-mobile.jpg" alt="" class="products-item-img">
+                            </picture>
+                            <div class="products-item-content">
+                                <h3 class="products-content-title">Classic sauce</h3>
+                                <button type="button" class="products-content-btn">Buy now</button>
+                            </div>
+                        </li>
+                        <li class="products-item">
+                            <picture>
+                                <source srcset="./images/pepper-fresh-mobile.jpg 1x, ./images/pepper-fresh-mobile@2x.jpg 2x"
+                                media="(max-width:1019px)">
+                                <img src="./images/pepper-fresh-mobile.jpg" alt="" class="products-item-img">
+                            </picture>
+                            <div class="products-item-content">
+                                <h3 class="products-content-title">Spicy sauce</h3>
+                                <button type="button" class="products-content-btn">Buy now</button>
+                            </div>
+                        </li>
+                    </ul>
+                   </div>
+                 </div>
+                 <!-- If we need navigation buttons -->
+                 <div class="swiper-button-prev"></div>
+                 <div class="swiper-button-next"></div>
+                </div>
+            </div>
         </section>
     </main>
     <script defer
@@ -118,5 +221,7 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"></script>
     <script defer src="./js/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
