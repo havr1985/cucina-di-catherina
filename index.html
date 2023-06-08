@@ -27,10 +27,10 @@
             </button>
             <nav class="menu-nav">
                 <ul class="menu-list list">
-                    <li class="menu-item"><a href="" class="menu-link link">Home</a></li>
-                    <li class="menu-item"><a href="" class="menu-link link">Store</a></li>
-                    <li class="menu-item"><a href="" class="menu-link link">Recipes</a></li>
-                    <li class="menu-item"><a href="" class="menu-link link">Gallery</a></li>
+                    <li class="menu-item"><a href="./index.html" class="menu-link link">Home</a></li>
+                    <li class="menu-item"><a href="#store" class="menu-link link">Store</a></li>
+                    <li class="menu-item"><a href="#recipes" class="menu-link link">Recipes</a></li>
+                    <li class="menu-item"><a href="#gallery" class="menu-link link">Gallery</a></li>
                 </ul>
             </nav>
             <button type="button" class="contact-btn header-btn">Contact us</button>
@@ -46,10 +46,10 @@
             </button>
             </div>
             <ul class="mobile-nav list">
-                <li class="mobile-nav-item"><a href="" class="mobile-nav-link link">Home</a></li>
-                <li class="mobile-nav-item"><a href="" class="mobile-nav-link link">Store</a></li>
-                <li class="mobile-nav-item"><a href="" class="mobile-nav-link link">Recipes</a></li>
-                <li class="mobile-nav-item"><a href="" class="mobile-nav-link link">Gallery</a></li>
+                <li class="mobile-nav-item"><a href="./index.html" class="mobile-nav-link link">Home</a></li>
+                <li class="mobile-nav-item"><a href="#store" class="mobile-nav-link link">Store</a></li>
+                <li class="mobile-nav-item"><a href="#recipes" class="mobile-nav-link link">Recipes</a></li>
+                <li class="mobile-nav-item"><a href="#gallery" class="mobile-nav-link link">Gallery</a></li>
             </ul>
             <button type="button" class="contact-btn">Contact us</button>
         </div>
@@ -123,7 +123,7 @@
             </div>
         </section>
 
-        <section class="products">
+        <section class="products" id="store">
             <div class="container">
                 <h2 class="products-title visually-hidden">Products</h2>
                 <div class="swiper products-container">
@@ -240,7 +240,7 @@
             </div>
         </section>
 
-        <section class="recipes">
+        <section class="recipes" id="recipes">
             <div class="container">
             <h2 class="recipes-title visually-hidden">Recipes</h2>
             <ul class="recipes-list list">
@@ -260,7 +260,7 @@
             </div>
         </section>
 
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="container">
                 <div class="swiper-gallery swiper">
                  <!-- Additional required wrapper -->
@@ -410,6 +410,22 @@
                  and <a href="" class="footer-text-link">Privacy Policy</a></p>
         </div>
     </footer>
+
+    <div class="backdrop">
+        <div class="modal-contact">
+            <p>Leave your contacts and we will contact you</p>
+            <form class="form-contact">
+                <label for="user-name" class="form-contact-label">Name</label>
+                <input type="text" id="user-name" name="user-name" class="form-contact-input" placeholder="Yuliia">
+                <label for="">Telephone</label>
+                <input type="text">
+                <label for="">Email</label>
+                <input type="text">
+                
+
+            </form>
+        </div>
+    </div>
     <script defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
