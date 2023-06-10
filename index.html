@@ -33,7 +33,7 @@
                     <li class="menu-item"><a href="#gallery" class="menu-link link">Gallery</a></li>
                 </ul>
             </nav>
-            <button type="button" class="contact-btn header-btn">Contact us</button>
+            <button type="button" class="contact-btn header-btn" data-modal-open>Contact us</button>
             </div>
         </div>
         <div class="mobile-menu-container js-menu-container" id="mobile-menu">
@@ -51,7 +51,7 @@
                 <li class="mobile-nav-item"><a href="#recipes" class="mobile-nav-link link">Recipes</a></li>
                 <li class="mobile-nav-item"><a href="#gallery" class="mobile-nav-link link">Gallery</a></li>
             </ul>
-            <button type="button" class="contact-btn">Contact us</button>
+            <button type="button" class="contact-btn" data-modal-open>Contact us</button>
         </div>
     </header>
 
@@ -411,16 +411,30 @@
         </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal-contact">
-            <p>Leave your contacts and we will contact you</p>
+            <p class="modal-contact-tittle">Leave your contacts and we will contact you</p>
             <form class="form-contact">
+                <div class="form-label-wrap">
                 <label for="user-name" class="form-contact-label">Name</label>
-                <input type="text" id="user-name" name="user-name" class="form-contact-input" placeholder="Yuliia">
-                <label for="">Telephone</label>
-                <input type="text">
-                <label for="">Email</label>
-                <input type="text">
+                <input type="text" id="user-name" name="user-name" class="form-contact-input" placeholder="Yuliia" required>
+                </div>
+                <div class="form-label-wrap">
+                <label for="user-tel" class="form-contact-label">Telephone</label>
+                <input type="tel" id="user-tel" name="user-tel" class="form-contact-input" placeholder="+380" required>
+                </div>
+                <div class="form-label-wrap">
+                <label for="user-email" class="form-contact-label">Email</label>
+                <input type="email" id="user-email" name="user-email" class="form-contact-input" placeholder="Contact@gmail.com" required>
+                <label for="user-message" class="form-message-lable"></label>
+                <textarea name="user-message" id="user-message" class="form-message-input" placeholder="How can we help you?"></textarea>
+                </div>
+                <button type="submit" class="form-contact-btn">Contact us</button>
+                <button type="button" class="modal-close-btn" data-modal-close>
+                    <svg class="close-btn-icon" width="17" height="17">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
                 
 
             </form>
@@ -433,5 +447,6 @@
     <script defer src="./js/mobile-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
